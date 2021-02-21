@@ -16,7 +16,6 @@ namespace DataAccess.Entities
         public short UnitsInStock { get; set; }
         public string ImagePath { get; set; }
 
-    
         public Guid SubCategoryId { get; set; }
         public SubCategory SubCategory { get; set; }
     }

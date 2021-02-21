@@ -12,7 +12,7 @@ namespace DataAccess.Context
     {
         public ProjectDbContext()
         {
-            Database.Connection.ConnectionString = "server=.;database=Yms3144ProjectDB;uid=sa;pwd=1234";
+            Database.Connection.ConnectionString = "server=.;database=NewYms3144ProjectDB;uid=sa;pwd=1234";
         }
 
         public DbSet<Product> Products{ get; set; }
