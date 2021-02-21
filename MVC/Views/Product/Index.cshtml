@@ -1,0 +1,27 @@
+﻿@model List<DataAccess.Entities.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="container mt-3">
+    <div class="row">
+
+        @foreach (var product in Model)
+        {
+            <div class="col-md-3">
+                <div class="card h-100  text-center">
+                    <div class="card-body">
+                        <h7 class="card-title">@product.ProductName</h7>
+                        <p class="card-text">@product.UnitPrice ₺</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
